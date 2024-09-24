@@ -1,0 +1,29 @@
+* {
+	font-family: 'primary-font', 'segoe ui', 'tahoma' !important;
+	box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	background-color: #efefef;
+	scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar-track {
+	background-color: #efefef;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #dadada;
+	border-radius: 6px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background-color: #bbb;
+}
+
+
+body {
+	/* font-family: 'primary-font', 'segoe ui', 'tahoma' !important; */
+}
