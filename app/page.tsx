@@ -202,10 +202,21 @@ export default function Home() {
 
 	return (<>
 		<ThemeProvider theme={theme}>
-
+			{/* error ReferenceError: window is not defined. marboot be Apex chart hast:
+			This error happened while generating the page. Any console logs will be displayed in the terminal window.
+			Uncaught Error: window is not defined
+    		at eval (webpack-internal:///(rsc)/./node_modules/apexcharts/dist/apexcharts.common.js:6:402177)
+    		at (rsc)/./node_modules/apexcharts/dist/apexcharts.common.js (file://C:\Users\Alireza\Documents\MEGAsync\Projects\در حال کار\front-end\Nextjs\project26-fehrest-mui-ts-(inworking)\.next\server\vendor-chunks\apexcharts.js:20:1)
+    		at __webpack_require__ (file://C:\Users\Alireza\Documents\MEGAsync\Projects\در حال کار\front-end\Nextjs\project26-fehrest-mui-ts-(inworking)\.next\server\webpack-runtime.js:33:42)
+    		at eval (webpack-internal:///(rsc)/./node_modules/react-apexcharts/dist/react-apexcharts.min.js:1:711)
+    		at (rsc)/./node_modules/react-apexcharts/dist/react-apexcharts.min.js (file://C:\Users\Alireza\Documents\MEGAsync\Projects\در حال کار\front-end\Nextjs\project26-fehrest-mui-ts-(inworking)\.next\server\vendor-chunks\react-apexcharts.js:20:1)
+    		at __webpack_require__ (file://C:\Users\Alireza\Documents\MEGAsync\Projects\در حال کار\front-end\Nextjs\project26-fehrest-mui-ts-(inworking)\.next\server\webpack-runtime.js:33:42)
+    		at eval (webpack-internal:///(rsc)/./app/Components/Panel/ErjaBox.tsx:10:74)
+			...
+			 */}
 			{/* <Box sx={{ display: 'flex' }}>baraye fix kardane oftadane drawer rooye mohtava */}
 				{/* <Drawer anchor="right" variant="permanent" open={open} sx={{ width: open == true ? '15rem' : '6rem', '& .MuiDrawer-paper': { width: open == true ? '15rem' : '6rem', p: '0.5rem' } }} onMouseOver={() => setOpen(true)} onMouseOut={() => setOpen(false)}> */}
-				<Drawer anchor="right" variant="permanent" open={open} sx={{ width: open == true ? '17rem' : '5.5rem',transition: '0.5s all', '& .MuiDrawer-paper': { width: open == true ? '17rem' : '5.5rem', transition: '0.5s all',zIndex: '99' }, '*::-webkit-scrollbar': {width: '8px'}, '*::-webkit-scrollbar-track': {backgroundColor: '#efefef'}, '*::-webkit-scrollbar-thumb': {backgroundColor: '#dadada', borderRadius: '6px'}  }} onMouseOver={() => setOpen(true)} onMouseOut={() => setOpen(false)}>
+				<Drawer anchor="right" variant="permanent" open={open} sx={{ width: (open != false) ? '17rem' : '5.5rem',transition: '0.5s all', '& .MuiDrawer-paper': { width: open != false ? '17rem' : '5.5rem', transition: '0.5s all',zIndex: '99' }, '*::-webkit-scrollbar': {width: '8px'}, '*::-webkit-scrollbar-track': {backgroundColor: '#efefef'}, '*::-webkit-scrollbar-thumb': {backgroundColor: '#dadada', borderRadius: '6px'}  }} onMouseOver={() => setOpen(true)} onMouseOut={() => setOpen(false)}>
 					<img src="/images/logo.png" style={{ width: '50px', height: '50px', marginRight: '16px' }} />
 					{/* <MenuList sx={{ display: open == true ? 'none' : 'block' }}> */}
 					{/* <MenuList sx={{ display: open == true ? 'none' : 'block' }}>
@@ -234,15 +245,15 @@ export default function Home() {
 				</MenuList> */}
 					<List>
 						<PanelButtonList data={p1data} panel={open} />
-						{open == true ? <Typography color="#a8b1bb" sx={{ pr: '1rem', pt: '0.5rem' }}>برنامه ها و صفحات</Typography> : <Divider variant="middle" sx={{ borderWidth: '2px', mt: '1.75rem' }} />}
+						{open != false ? <Typography color="#a8b1bb" sx={{ pr: '1rem', pt: '0.5rem' }}>برنامه ها و صفحات</Typography> : <Divider variant="middle" sx={{ borderWidth: '2px', mt: '1.75rem' }} />}
 						<PanelButtonList data={p2data} panel={open} />
-						{open == true ? <Typography color="#a8b1bb" sx={{ pr: '1rem', pt: '0.5rem' }}>اجزاء</Typography> : <Divider variant="middle" sx={{ borderWidth: '2px', mt: '1.75rem' }} />}
+						{open != false ? <Typography color="#a8b1bb" sx={{ pr: '1rem', pt: '0.5rem' }}>اجزاء</Typography> : <Divider variant="middle" sx={{ borderWidth: '2px', mt: '1.75rem' }} />}
 						<PanelButtonList data={p3data} panel={open} />
-						{open == true ? <Typography color="#a8b1bb" sx={{ pr: '1rem', pt: '0.5rem' }}>فرم ها و جدول ها</Typography> : <Divider variant="middle" sx={{ borderWidth: '2px', mt: '1.75rem' }} />}
+						{open != false ? <Typography color="#a8b1bb" sx={{ pr: '1rem', pt: '0.5rem' }}>فرم ها و جدول ها</Typography> : <Divider variant="middle" sx={{ borderWidth: '2px', mt: '1.75rem' }} />}
 						<PanelButtonList data={p4data} panel={open} />
-						{open == true ? <Typography color="#a8b1bb" sx={{ pr: '1rem', pt: '0.5rem' }}>نمودارها و نقشه ها</Typography> : <Divider variant="middle" sx={{ borderWidth: '2px', mt: '1.75rem' }} />}
+						{open != false ? <Typography color="#a8b1bb" sx={{ pr: '1rem', pt: '0.5rem' }}>نمودارها و نقشه ها</Typography> : <Divider variant="middle" sx={{ borderWidth: '2px', mt: '1.75rem' }} />}
 						<PanelButtonList data={p5data} panel={open} />
-						{open == true ? <Typography color="#a8b1bb" sx={{ pr: '1rem', pt: '0.5rem' }}>متفرقه</Typography> : <Divider variant="middle" sx={{ borderWidth: '2px', mt: '1.75rem' }} />}
+						{open != false ? <Typography color="#a8b1bb" sx={{ pr: '1rem', pt: '0.5rem' }}>متفرقه</Typography> : <Divider variant="middle" sx={{ borderWidth: '2px', mt: '1.75rem' }} />}
 						<PanelButtonList data={p6data} panel={open} />
 					</List>
 				</Drawer>

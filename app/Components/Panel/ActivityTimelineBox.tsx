@@ -54,7 +54,7 @@ const ActivityTimelineBox = () => {
 					</Stack>
 				</StepContent>
 			</Step>
-			<Step key={1} active sx={{ '& .MuiSvgIcon-root': { color: '#fdac41' } }}>
+			<Step key={2} active sx={{ '& .MuiSvgIcon-root': { color: '#fdac41' } }}>
 				<StepLabel sx={{ '& .MuiStepIcon-text': { display: 'none' }, p: '0' }}>
 					<Grid2 container sx={{ justifyContent: 'space-between' }}>
 						<Typography align="right" sx={{ pr: '1rem', fontWeight: '500' }}>ملاقات با مشتری</Typography>
@@ -120,9 +120,20 @@ const ActivityTimelineBox = () => {
 					</Stack>
 				</StepContent>
 			</Step>
-			<Step key={4} >
+			<Step key={4}>
 				<StepLabel icon={<BxCheck style={{backgroundColor: '#fff', color: '#888',border: '3px solid #bbb', width: '25px', height: '25px', borderRadius: '50%'}} />} sx={{ p: '0' }}></StepLabel>
 			</Step>
+			{/* agar 'key' ha dar <Step> yeksan bashe in error ro mide ke rahat peida nemishe:
+			app-index.js:33 Warning: Encountered two children with the same key, `.$1`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+   	 		at div
+   	 		at eval (webpack-internal:///(app-pages-browser)/./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:70:66)
+    		at Stepper (webpack-internal:///(app-pages-browser)/./node_modules/@mui/material/Stepper/Stepper.js:84:98)
+    		at div
+    		at eval (webpack-internal:///(app-pages-browser)/./node_modules/@emotion/react/dist/emotion-element-7a1343fa.browser.development.esm.js:70:66)
+    		at Box (webpack-internal:///(app-pages-browser)/./node_modules/@mui/system/createBox/createBox.js:28:85)
+    		at ActivityTimelineBox (webpack-internal:///(app-pages-browser)/./app/Components/Panel/ActivityTimelineBox.tsx:26:84)
+			...
+			 */}
 		</Stepper>
 	</Box>
 }
