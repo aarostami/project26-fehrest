@@ -13,6 +13,7 @@ import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
 import React from 'react'
 import Button from '@mui/material/Button'
+import prof from '../images/1.png'
 
 const Header = () => {
 	const StyleBadge = styled(Badge)(({ theme }) => ({
@@ -161,7 +162,8 @@ const Header = () => {
 				{/* <Badge color='success' variant='dot' anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }} overlap='circular' sx={{'& .MuiBadge-badge': {border: '2px solid white'}}}> */}
 				{/* <Badge color='success' variant='dot' anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }} overlap='circular'> */}
 				<StyleBadge variant='dot' anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }} overlap='circular'>
-					<Avatar src='/images/1.png' />
+					{/* <Avatar src='/images/1.png' /> */}
+					<Avatar src={prof.src} />
 				</StyleBadge>
 			</Grid2>
 		</Grid2>

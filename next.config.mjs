@@ -8,7 +8,10 @@ const nextConfig = {
 	},
 	images: {
 		unoptimized: true
-	}
+	},
+	/* images: {
+    	disableStaticImages: true
+  	} */
 };
 
 export default nextConfig;
