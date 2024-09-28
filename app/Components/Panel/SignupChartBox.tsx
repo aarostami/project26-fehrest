@@ -1,5 +1,5 @@
 import { Box, Grid2, Typography } from "@mui/material"
-import { BxChevronUp } from "./Icons/icon"
+import { BxChevronUp } from "../Icons/icon"
 import Chart from "react-apexcharts"
 import { ApexOptions } from "apexcharts"	//in baraye add kardane type hast
 

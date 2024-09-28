@@ -8,7 +8,7 @@ import './style.css'
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { AppBar, Box, Button, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, ListSubheader, MenuItem, MenuList, Stack, Toolbar, Typography } from "@mui/material";
 import { Suspense, useState } from "react";
-import { BxHomeCircle, BxLayout, BxEnvelopeOpen, BxChart, BxChat, BxCalendar, BxFoodMenu, BxGrid, BxUserCheck, BxCheckShield, BxUser, BxSpreadsheet, BxWindowOpen, BxCollection, BxBox, BxCopy, BxCrown, BxCarousel, BxListCheck, BxTable, BxMapAlt, BxSupport, BxFile, BxChevronLeft, BxDockTop, BxDetail } from './Components/Panel/Icons/icon'
+import { BxHomeCircle, BxLayout, BxEnvelopeOpen, BxChart, BxChat, BxCalendar, BxFoodMenu, BxGrid, BxUserCheck, BxCheckShield, BxUser, BxSpreadsheet, BxWindowOpen, BxCollection, BxBox, BxCopy, BxCrown, BxCarousel, BxListCheck, BxTable, BxMapAlt, BxSupport, BxFile, BxChevronLeft, BxDockTop, BxDetail } from './Components/Icons/icon'
 import { PanelButton, PanelButtonIcon, PanelButtonList } from "./Components/Panel/PanelButton";
 import dynamic from "next/dynamic";
 

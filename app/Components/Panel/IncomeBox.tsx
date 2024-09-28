@@ -1,6 +1,6 @@
 import { Box, Grid2, Typography } from "@mui/material";
 import Chart from "react-apexcharts"
-import { BxDollar } from "./Icons/icon";
+import { BxDollar } from "../Icons/icon";
 import { ApexOptions } from "apexcharts"	//in baraye add kardane type hast
 
 const IncomeBox = () => {
