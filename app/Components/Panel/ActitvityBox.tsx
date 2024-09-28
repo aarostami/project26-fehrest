@@ -1,6 +1,6 @@
 import { Box, Typography, LinearProgress } from "@mui/material"
 import Grid from "@mui/material/Grid2"
-import { BxCube, BxDollar, BxCheck, BxTrendingUp } from "../Icons/icon"
+import { BxCube, BxDollar, BxCheck, BxTrendingUp } from "../Icons/icons"
 import IconMake from "../IconMake"
 
 function ActivityBox() {

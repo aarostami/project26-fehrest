@@ -1,5 +1,5 @@
 import { Avatar, AvatarGroup, Box, Divider, Grid2, LinearProgress, Menu, MenuItem, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Tooltip, Typography } from "@mui/material"
-import { BxChat, BxCheck, BxDotsVerticalRounded } from "../Icons/icon"
+import { BxChat, BxCheck, BxDotsVerticalRounded } from "../Icons/icons"
 import { useState } from "react"
 
 const AlertFinanBox = () => {
