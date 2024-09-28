@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 // https://icon-sets.iconify.design/
 export function BxSearchAlt(props:any) {
