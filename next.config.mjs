@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	//basePath: '/project23-theme3',	//baraye local bayad ino comment konim
+	basePath: '/project26-fehrest',	//baraye local bayad ino comment konim
 	//output: 'export',
 	images: {
 		// path: "/",
