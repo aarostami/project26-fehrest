@@ -1,3 +1,4 @@
+'use client'
 /* import ActivityBox from './Panel/ActitvityBox'
 import ActivityTimelineBox from "./Panel/ActivityTimelineBox"
 import AlertFinanBox from "./Panel/AlertFinanBox"
