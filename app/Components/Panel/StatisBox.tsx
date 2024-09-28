@@ -8,6 +8,26 @@ import Menu from "@mui/material/Menu"
 import MenuItem from "@mui/material/MenuItem"
 import { useState } from "react"
 import { ApexOptions } from "apexcharts"	//in baraye add kardane type hast
+/* agar in error ro dashtim bayad 'dynamic import' estefade konim.
+// hamin toori ba error kar mikone, ama dar github actions error dare va build nemikone.
+// chon client object window dare, na server va ssr
+⨯ ReferenceError: window is not defined
+    at __webpack_require__ (C:\Users\Alireza\Documents\MEGAsync\Projects\در حال کار\front-end\Nextjs\project26-fehrest-mui-ts-(inworking)\.next\server\webpack-runtime.js:33:42)
+    at __webpack_require__ (C:\Users\Alireza\Documents\MEGAsync\Projects\در حال کار\front-end\Nextjs\project26-fehrest-mui-ts-(inworking)\.next\server\webpack-runtime.js:33:42)
+    at eval (./app/Components/Panel/StatisBox.tsx:11:74)
+    at (ssr)/./app/Components/Panel/StatisBox.tsx (C:\Users\Alireza\Documents\MEGAsync\Projects\در حال کار\front-end\Nextjs\project26-fehrest-mui-ts-(inworking)\.next\server\app\page.js:184:1)
+    at __webpack_require__ (C:\Users\Alireza\Documents\MEGAsync\Projects\در حال کار\front-end\Nextjs\project26-fehrest-mui-ts-(inworking)\.next\server\webpack-runtime.js:33:42)
+    at eval (./app/Components/Main.tsx:7:74)
+    at (ssr)/./app/Components/Main.tsx (C:\Users\Alireza\Documents\MEGAsync\Projects\در حال کار\front-end\Nextjs\project26-fehrest-mui-ts-(inworking)\.next\server\app\page.js:151:1)    
+    at __webpack_require__ (C:\Users\Alireza\Documents\MEGAsync\Projects\در حال کار\front-end\Nextjs\project26-fehrest-mui-ts-(inworking)\.next\server\webpack-runtime.js:33:42)
+    at eval (./app/page.tsx:9:74)
+    at (ssr)/./app/page.tsx (C:\Users\Alireza\Documents\MEGAsync\Projects\در حال کار\front-end\Nextjs\project26-fehrest-mui-ts-(inworking)\.next\server\app\page.js:195:1)
+    at Object.__webpack_require__ [as require] (C:\Users\Alireza\Documents\MEGAsync\Projects\در حال کار\front-end\Nextjs\project26-fehrest-mui-ts-(inworking)\.next\server\webpack-runtime.js:33:42)
+	digest: "4238017030"
+ 	GET / 500 in 250ms
+*/
+// const Chart = dynamic(() => import("react-apexcharts"), { ssr: false })
+// ke man bejash dar Main.tsx estefade kardam.
 
 const StatisBox = () => {
 	const [anchorEl, setAnchorEl] = useState(null)

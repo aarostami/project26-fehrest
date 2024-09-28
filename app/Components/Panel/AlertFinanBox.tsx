@@ -90,7 +90,7 @@ const AlertFinanBox = () => {
 				<Typography>678 دیدگاه</Typography>
 			</Grid2>
 		</Grid2>
-	</Box >
+	</Box>
 }
 
 export default AlertFinanBox
