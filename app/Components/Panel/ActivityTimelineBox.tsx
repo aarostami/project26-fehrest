@@ -1,6 +1,11 @@
 import { Box, Grid2, Menu, MenuItem, Step, StepLabel, Stepper, Typography, StepContent, Stack, AvatarGroup, Tooltip, Avatar, Grid } from "@mui/material";
 import { BxCheck, BxDotsVerticalRounded } from "./Icons/icons";
 import { useState } from "react";
+import ava3 from '../../images/3.png'
+import ava4 from '../../images/4.png'
+import ava5 from '../../images/5.png'
+import ava6 from '../../images/6.png'
+import ava7 from '../../images/7.png'
 
 const ActivityTimelineBox = () => {
 	const [anchorEl, setAnchorEl] = useState(null)
@@ -102,19 +107,24 @@ const ActivityTimelineBox = () => {
 						<Typography>5 عضو تیم در یک پروژه</Typography>
 						<AvatarGroup max={5} sx={{ justifyContent: 'flex-end', '& .MuiAvatar-root:hover': { transition: '0.5s all', zIndex: '9', transform: 'translateY(-5px)', boxShadow: '0px 2px 3px #aaa' } }}>
 							<Tooltip title='تونی استارک' placement="top" arrow sx={{ width: '2rem', height: '2rem' }}>
-								<Avatar src="/images/3.png" style={{ marginLeft: 'var(--AvatarGroup-spacing, -8px)' }} />
+								{/* <Avatar src="/images/3.png" style={{ marginLeft: 'var(--AvatarGroup-spacing, -8px)' }} /> */}
+								<Avatar src={ava3.src} style={{ marginLeft: 'var(--AvatarGroup-spacing, -8px)' }} />
 							</Tooltip>
 							<Tooltip title='استیو راجرز' placement="top" arrow sx={{ width: '2rem', height: '2rem' }}>
-								<Avatar src="/images/4.png" />
+								{/* <Avatar src="/images/4.png" /> */}
+								<Avatar src={ava4.src} />
 							</Tooltip>
 							<Tooltip title='بری الن' placement="top" arrow sx={{ width: '2rem', height: '2rem' }}>
-								<Avatar src="/images/5.png" />
+								{/* <Avatar src="/images/5.png" /> */}
+								<Avatar src={ava5.src} />
 							</Tooltip>
 							<Tooltip title='دیوید بکام' placement="top" arrow sx={{ width: '2rem', height: '2rem' }}>
-								<Avatar src="/images/6.png" />
+								{/* <Avatar src="/images/6.png" /> */}
+								<Avatar src={ava6.src} />
 							</Tooltip>
 							<Tooltip title='جسیکا آلبا' placement="top" arrow sx={{ width: '2rem', height: '2rem' }}>
-								<Avatar src="/images/7.png" />
+								{/* <Avatar src="/images/7.png" /> */}
+								<Avatar src={ava7.src} />
 							</Tooltip>
 						</AvatarGroup>
 					</Stack>
