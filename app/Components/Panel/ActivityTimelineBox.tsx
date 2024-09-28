@@ -1,6 +1,7 @@
 import { Box, Grid2, Menu, MenuItem, Step, StepLabel, Stepper, Typography, StepContent, Stack, AvatarGroup, Tooltip, Avatar, Grid } from "@mui/material";
 import { BxCheck, BxDotsVerticalRounded } from "./Icons/icons";
 import { useState } from "react";
+import ava1 from '../../images/1.png'
 import ava3 from '../../images/3.png'
 import ava4 from '../../images/4.png'
 import ava5 from '../../images/5.png'
@@ -78,7 +79,8 @@ const ActivityTimelineBox = () => {
 					<Stack rowGap={2}>
 						<Typography>ملاقات برای پروژه با استیو در 10:15 ق.ظ</Typography>
 						<Grid2 container sx={{columnGap: '1rem', alignItems: 'center'}}>
-							<Avatar src="/images/1.png" />
+							{/* <Avatar src="/images/1.png" /> */}
+							<Avatar src={ava1.src} />
 							<Box>
 								<Typography>بیل گیتس (مشتری)</Typography>
 								<Typography sx={{pt: '0.5rem'}}>بنیان‌گذار مایکروسافت</Typography>
