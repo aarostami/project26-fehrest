@@ -1,6 +1,6 @@
 import { Box, Container, Grid2, Typography } from "@mui/material"
 import Chart from "react-apexcharts"
-import { BxDotsVerticalRounded, BxUpArrowAlt, BxDownArrowAlt } from "../Icons/icons"
+import { BxDotsVerticalRounded, BxUpArrowAlt, BxDownArrowAlt } from "./Icons/icons"
 import Menu from "@mui/material/Menu"
 import MenuItem from "@mui/material/MenuItem"
 import { useState } from "react"

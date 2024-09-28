@@ -1,5 +1,5 @@
 import { Box, Grid2, Menu, MenuItem, Step, StepLabel, Stepper, Typography, StepContent, Stack, AvatarGroup, Tooltip, Avatar, Grid } from "@mui/material";
-import { BxCheck, BxDotsVerticalRounded } from "../Icons/icons";
+import { BxCheck, BxDotsVerticalRounded } from "./Icons/icons";
 import { useState } from "react";
 
 const ActivityTimelineBox = () => {

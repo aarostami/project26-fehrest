@@ -1,6 +1,6 @@
 import { Box, Typography, Grid2 } from "@mui/material"
 import Chart from "react-apexcharts"
-import { BxChevronUp } from "../Icons/icons"
+import { BxChevronUp } from "./Icons/icons"
 import { ApexOptions } from "apexcharts"	//in baraye add kardane type hast
 
 const TabdilBox = () => {

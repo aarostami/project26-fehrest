@@ -8,7 +8,7 @@ import './style.css'
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { AppBar, Box, Button, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, ListSubheader, MenuItem, MenuList, Stack, Toolbar, Typography } from "@mui/material";
 import { Suspense, useState } from "react";
-import { BxHomeCircle, BxLayout, BxEnvelopeOpen, BxChart, BxChat, BxCalendar, BxFoodMenu, BxGrid, BxUserCheck, BxCheckShield, BxUser, BxSpreadsheet, BxWindowOpen, BxCollection, BxBox, BxCopy, BxCrown, BxCarousel, BxListCheck, BxTable, BxMapAlt, BxSupport, BxFile, BxChevronLeft, BxDockTop, BxDetail } from './Components/Icons/icons'
+import { BxHomeCircle, BxLayout, BxEnvelopeOpen, BxChart, BxChat, BxCalendar, BxFoodMenu, BxGrid, BxUserCheck, BxCheckShield, BxUser, BxSpreadsheet, BxWindowOpen, BxCollection, BxBox, BxCopy, BxCrown, BxCarousel, BxListCheck, BxTable, BxMapAlt, BxSupport, BxFile, BxChevronLeft, BxDockTop, BxDetail } from './Components/Panel/Icons/icons'
 import { PanelButton, PanelButtonIcon, PanelButtonList } from "./Components/Panel/PanelButton";
 import dynamic from "next/dynamic";
 
@@ -261,7 +261,7 @@ export default function Home() {
 				<Box sx={{pr: '5.5rem', '*::-webkit-scrollbar': {width: '8px'}, '*::-webkit-scrollbar-track': {backgroundColor: '#efefef'}, '*::-webkit-scrollbar-thumb': {backgroundColor: '#dadada', borderRadius: '6px'}}}>{/*baraye fix kardane oftadane drawer rooye mohtava */}
 					<Header />
 					{/* <Suspense fallback={<h2>loading ...</h2>}> */}
-					{/* <Main /> */}
+					<Main />
 					{/* </Suspense> */}
 					<Footer />
 				</Box>

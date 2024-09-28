@@ -1,6 +1,6 @@
 import { Box, Button, Grid2, Menu, MenuItem, Select, Typography } from "@mui/material"
 import Chart from "react-apexcharts"
-import { BxChevronDown } from "../Icons/icons"
+import { BxChevronDown } from "./Icons/icons"
 import { useState } from "react"
 import { ApexOptions } from "apexcharts"	//in baraye add kardane type hast
 

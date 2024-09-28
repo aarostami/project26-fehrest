@@ -1,5 +1,5 @@
 import { Box, Button, Collapse, Link, List, ListItem, ListItemButton, ListItemIcon, ListItemText, MenuItem, Stack, Typography } from "@mui/material"
-import { BxChevronDown, BxChevronLeft, BxChevronUp, BxHomeCircle } from "../Icons/icons"
+import { BxChevronDown, BxChevronLeft, BxChevronUp, BxHomeCircle } from "./Icons/icons"
 import { useState } from "react"
 
 const PanelButton = (props: any) => {
